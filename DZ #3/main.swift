@@ -38,27 +38,27 @@ func infoText(text: String){
 }
  
 ////№2. Создать функцию, которая будет считать количество определенных букв в строке
-//func countLetter(text: String, specialLetter: Character){
-//    var counter = 0
-//    for char in text {
-//        if char == specialLetter{
-//            counter += 1
-//        }
-//    }
-//    print("В тексте букв\"\(specialLetter)\": \(counter)")
-//}
-//countLetter(text: text, specialLetter: "e")
-//
+func countLetter(text: String, specialLetter: Character){
+    var counter = 0
+    for char in text {
+        if char == specialLetter{
+            counter += 1
+        }
+    }
+    print("В тексте букв\"\(specialLetter)\": \(counter)")
+}
+countLetter(text: text, specialLetter: "е")
+
 ////№3. Создать функцию, которая будет выдавать "ААА" если передать туда число 3(например)
 //
-//func makeA(number: Int){
-//    var result = ""
-//    var number = number
-//
-//    while number != 0 {
-//        number -= 1
-//        result += "A"
-//    }
-//    print(result)
-//}
-//makeA(number:3)
+func makeA(number: Int){
+    var result = ""
+    var number = number
+
+    while number != 0 {
+        number -= 1
+        result += "A"
+    }
+    print(result)
+}
+makeA(number:3)
